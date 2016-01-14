@@ -17,11 +17,10 @@ angular
         controller: 'portfolioCtrl'
       });
 
-    // $locationProvide.hashPrefix('!');
-    // $locationProvider.html5Mode({
-    //   enabled: true,
-    //   requireBase: false
-    // });
+    $locationProvider.html5Mode({
+      enabled: true,
+      requireBase: false
+    });
 
   })
   .controller('appCtrl', function($scope, $location){

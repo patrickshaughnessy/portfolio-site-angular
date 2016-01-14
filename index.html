@@ -8,7 +8,10 @@
   <title>Patrick Shaughnessy</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/social.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
@@ -29,7 +32,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <p class="navbar-text">Patrick Shaughnessy</p>
+          <p class="navbar-text" ui-sref="home">Patrick Shaughnessy</p>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -43,7 +46,34 @@
         </div>
       </div>
     </div>
-    <ui-view></ui-view>
+    <div class="container-fluid">
+      <ui-view></ui-view>
+    </div>
+    <div class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <div class="social row">
+          <div class="col-xs-2 col-xs-offset-1">
+            <div><a target="_blank" href="https://www.facebook.com/patrick.shaughnessy.5815"><i class="fa fa-lg fa-facebook"></i></a></div>
+          </div>
+          <div class="col-xs-2">
+            <div><a target="_blank" href="https://twitter.com/pattshaughnessy"><i class="fa fa-lg fa-twitter"></i></a></div>
+
+          </div>
+          <div class="col-xs-2">
+            <div><a target="_blank" href="https://github.com/patrickshaughnessy"><i class="fa fa-lg fa-github"></i></a></div>
+
+          </div>
+          <div class="col-xs-2">
+            <div><a target="_blank" href="https://www.linkedin.com/pub/patrick-shaughnessy/14/2b1/77"><i class="fa fa-lg fa-linkedin"></i></a></div>
+
+          </div>
+          <div class="col-xs-2">
+            
+            <div><a target="_blank" href="http://stackoverflow.com/users/5294685/patrick-shaughnessy"><i class="fa fa-lg fa-stack-overflow"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
