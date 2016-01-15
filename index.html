@@ -21,6 +21,7 @@
   <script src="controllers/homeCtrl.js"></script>
   <script src="controllers/portfolioCtrl.js"></script>
   <script src="controllers/aboutCtrl.js"></script>
+  <script src="directives/projectCard.js"></script>
 
 
 </head>
@@ -42,8 +43,14 @@
             <li ng-class="{active: isActive('/')}" data-toggle="collapse" data-target=".navbar-collapse.in">
               <a ui-sref="home">Home <span class="sr-only">(current)</span></a>
             </li>
+            <li ng-class="{active: isActive('/about')}" data-toggle="collapse" data-target=".navbar-collapse.in">
+              <a ui-sref="about">About Me</a>
+            </li>
             <li ng-class="{active: isActive('/portfolio')}" data-toggle="collapse" data-target=".navbar-collapse.in">
               <a ui-sref="portfolio">Portfolio</a>
+            </li>
+            <li ng-class="{active: isActive('/blog')}" data-toggle="collapse" data-target=".navbar-collapse.in">
+              <a href="/blog">Blog</a>
             </li>
           </ul>
         </div>
@@ -51,32 +58,33 @@
     </div>
 
     <div class="container-fluid">
-      <h1>Patrick Shaughnessy</h1>
-      <p>Full Stack Javascript Developer</p>
-      <div class="ui-view-container">
-        <div ui-view></div>
-      </div>
-    </div>
-
-    <div class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container">
-        <div class="social row">
-          <div class="col-xs-2 col-xs-offset-1">
-            <div><a target="_blank" href="https://www.facebook.com/patrick.shaughnessy.5815"><i class="fa fa-lg fa-facebook"></i></a></div>
-          </div>
-          <div class="col-xs-2">
-            <div><a target="_blank" href="https://twitter.com/pattshaughnessy"><i class="fa fa-lg fa-twitter"></i></a></div>
-          </div>
-          <div class="col-xs-2">
-            <div><a target="_blank" href="https://github.com/patrickshaughnessy"><i class="fa fa-lg fa-github"></i></a></div>
-          </div>
-          <div class="col-xs-2">
-            <div><a target="_blank" href="https://www.linkedin.com/pub/patrick-shaughnessy/14/2b1/77"><i class="fa fa-lg fa-linkedin"></i></a></div>
-          </div>
-          <div class="col-xs-2">
-            <div><a target="_blank" href="http://stackoverflow.com/users/5294685/patrick-shaughnessy"><i class="fa fa-lg fa-stack-overflow"></i></a></div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <h1>Patrick Shaughnessy</h1>
+          <p>Full Stack Javascript Developer</p>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="social row">
+            <div class="col-xs-2 col-xs-offset-1">
+              <div><a target="_blank" href="https://www.facebook.com/patrick.shaughnessy.5815"><i class="fa fa-lg fa-facebook"></i></a></div>
+            </div>
+            <div class="col-xs-2">
+              <div><a target="_blank" href="https://twitter.com/pattshaughnessy"><i class="fa fa-lg fa-twitter"></i></a></div>
+            </div>
+            <div class="col-xs-2">
+              <div><a target="_blank" href="https://github.com/patrickshaughnessy"><i class="fa fa-lg fa-github"></i></a></div>
+            </div>
+            <div class="col-xs-2">
+              <div><a target="_blank" href="https://www.linkedin.com/pub/patrick-shaughnessy/14/2b1/77"><i class="fa fa-lg fa-linkedin"></i></a></div>
+            </div>
+            <div class="col-xs-2">
+              <div><a target="_blank" href="http://stackoverflow.com/users/5294685/patrick-shaughnessy"><i class="fa fa-lg fa-stack-overflow"></i></a></div>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="ui-view-container">
+        <div ui-view></div>
       </div>
     </div>
   </div>
