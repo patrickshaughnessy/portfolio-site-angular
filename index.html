@@ -12,12 +12,15 @@
   <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/social.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-animate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
   <script src="app.js"></script>
   <script src="controllers/homeCtrl.js"></script>
   <script src="controllers/portfolioCtrl.js"></script>
+  <script src="controllers/aboutCtrl.js"></script>
 
 
 </head>
@@ -46,9 +49,15 @@
         </div>
       </div>
     </div>
+
     <div class="container-fluid">
-      <ui-view></ui-view>
+      <h1>Patrick Shaughnessy</h1>
+      <p>Full Stack Javascript Developer</p>
+      <div class="ui-view-container">
+        <div ui-view></div>
+      </div>
     </div>
+
     <div class="navbar navbar-default navbar-fixed-bottom">
       <div class="container">
         <div class="social row">
@@ -57,18 +66,14 @@
           </div>
           <div class="col-xs-2">
             <div><a target="_blank" href="https://twitter.com/pattshaughnessy"><i class="fa fa-lg fa-twitter"></i></a></div>
-
           </div>
           <div class="col-xs-2">
             <div><a target="_blank" href="https://github.com/patrickshaughnessy"><i class="fa fa-lg fa-github"></i></a></div>
-
           </div>
           <div class="col-xs-2">
             <div><a target="_blank" href="https://www.linkedin.com/pub/patrick-shaughnessy/14/2b1/77"><i class="fa fa-lg fa-linkedin"></i></a></div>
-
           </div>
           <div class="col-xs-2">
-            
             <div><a target="_blank" href="http://stackoverflow.com/users/5294685/patrick-shaughnessy"><i class="fa fa-lg fa-stack-overflow"></i></a></div>
           </div>
         </div>

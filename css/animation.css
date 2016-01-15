@@ -1,0 +1,112 @@
+/* Have to set height explicity on ui-view
+to prevent collapsing during animation*/
+.ui-view-container {
+  position: relative;
+  /*height: 65px;*/
+  margin-top: 50px;
+}
+
+[ui-view] {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  margin: 0;
+  /*-webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;*/
+  transition: all 1s cubic-bezier(0.795, 0.120, 0.105, 1.400);
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  /*-webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);*/
+  transform:scale3d(0.5, 0.5, 0.5) translate3d(0, 500px, 1000px);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  /*-webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);*/
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+  position: absolute;
+  /*-webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);*/
+  /*transform:translate3d(0, 0, 0);*/
+  transform: scale3d(1, 1, 1);
+
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  position: absolute;
+  /*-webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);*/
+  /*transform:translate3d(0, 0, 0);*/
+  transform: scale3d(0.3, 0.3, 0.3) translate3d(0, 1000px, 1000px);
+
+}
+
+
+/* slide down from top */
+/*.slidedown {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.slidedown.ng-enter,
+.slidedown.ng-leave {
+  -webkit-transition: all 1s ease;
+  transition: all 1s cubic-bezier(0.795, 0.120, 0.105, 1.400);
+}
+.slidedown.ng-enter {
+  opacity: 0;
+  margin-left: -100%;
+}
+.slidedown.ng-enter-active {
+  opacity: 1;
+  margin-left: 0;
+}
+.slidedown.ng-leave {
+  opacity: 0;
+  margin-bottom: 0;
+}
+.slidedown.ng-leave-active {
+  opacity: 0;
+  margin-bottom: 100%;
+}*/
+
+
+/*.slideup {
+  position: relative;
+  margin-bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.slideup.ng-enter,
+.slideup.ng-leave {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.slideup.ng-enter {
+  margin-bottom: 100%;
+}
+.slideup.ng-enter-active {
+  margin-bottom: 0;
+}
+.slideup.ng-leave {
+  margin-bottom: 0;
+}
+.slideup.ng-leave-active {
+  margin-bottom: -100%;
+}*/

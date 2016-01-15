@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('app', ['ui.router'])
+  .module('app', ['ui.router', 'ngAnimate'])
   .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise("/");
 
@@ -15,12 +15,17 @@ angular
         url: "/portfolio",
         templateUrl: "templates/portfolio.html",
         controller: 'portfolioCtrl'
+      })
+      .state('about', {
+        url: "/about",
+        templateUrl: "templates/about.html",
+        controller: 'aboutCtrl'
       });
-
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
+    //
+    // $locationProvider.html5Mode({
+    //   enabled: true,
+    //   requireBase: false
+    // });
 
   })
   .controller('appCtrl', function($scope, $location){

@@ -6,6 +6,7 @@
   height: 100vh;
   width: 100vw;
   font-family: 'Ubuntu', sans-serif;
+  color: white;
 }
 
 .navbar-default {
@@ -14,8 +15,8 @@
 }
 
 .homeWrapper {
-  color: white;
   text-align: left;
+  position: relative
 }
 
 .linkWrapper {

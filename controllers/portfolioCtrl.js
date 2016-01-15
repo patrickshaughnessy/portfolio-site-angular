@@ -2,6 +2,6 @@
 
 angular
   .module('app')
-  .controller('portfolioCtrl', function($scope){
+  .controller('portfolioCtrl', function($scope, $timeout){
     console.log('portfolioCtrl');
   })
