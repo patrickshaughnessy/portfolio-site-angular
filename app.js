@@ -33,6 +33,12 @@ angular
     // });
 
   })
+  // .config(function (hljsServiceProvider) {
+  //   hljsServiceProvider.setOptions({
+  //     // replace tab with 4 spaces
+  //     tabReplace: '    '
+  //   });
+  // })
   .controller('appCtrl', function($scope, $location){
 
     $scope.isActive = function(url){

@@ -14,7 +14,7 @@ angular
       controller: function($scope) {
         'use strict';
         $scope.post = JSON.parse($scope.info);
-        console.log($scope.post);
+        
       }
     };
   };

@@ -9,6 +9,8 @@ angular
       $scope.loaded = true;
     }, 1500)
 
+    
+
     $scope.goToPost = function(id) {
        $location.hash(id);
        $anchorScroll();

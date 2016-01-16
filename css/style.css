@@ -20,9 +20,28 @@
   /*position: relative*/
 }
 
+.homeWrapper a {
+  color: white;
+  transition: 1s cubic-bezier(0.795, 0.120, 0.105, 1.400);
+}
+.homeWrapper a:hover {
+  text-decoration: none;
+  transform: scale3d(0, 0, 0.1) rotate(360deg);
+}
+
 .aboutWrapper {
   text-align: left;
 }
+.aboutWrapper a {
+  color: white;
+  text-decoration: underline;
+  transition: 1s cubic-bezier(0.795, 0.120, 0.105, 1.400);
+}
+.aboutWrapper a:hover {
+  /*text-decoration: none;*/
+  transform: translateY(-5px)
+}
+
 
 .profilePic {
   text-align: center;
@@ -56,4 +75,13 @@
 
 .blogNavArea {
   position: fixed;
+}
+
+.blogWrapper {
+  background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85) );
+  color: black;
+}
+
+.postTitle {
+  text-align: left;
 }
