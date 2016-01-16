@@ -1,8 +1,16 @@
 <div class="thumbnail" ng-class="{animated: animate, flipInX: animate}" ng-if="animate">
-  <img ng-src="{{project.image}}" alt="project image">
-  <div class="caption">
-    <h3>{{project.title}}</h3>
-    <p>{{project.description}}</p>
-    <p><a ng-href={{project.link}} class="btn btn-primary" role="button">Check It Out</a> <a ng-href={{project.github}} class="btn btn-default" role="button">View On Github</a></p>
+  <div class="square">
+    <div class="inner-square">
+      <div class="card-image">
+        <img ng-src="{{project.image}}" alt="project image" class="img img-responsive full-width">
+      </div>
+      <div class="card-caption">
+        <div class="caption">
+          <h3>{{project.title}}</h3>
+          <p>{{project.description}}</p>
+          <p><a ng-href={{project.link}} class="btn btn-primary" role="button">Check It Out</a> <a ng-href={{project.github}} class="btn btn-default" role="button">View On Github</a></p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

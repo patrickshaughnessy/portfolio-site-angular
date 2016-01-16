@@ -52,19 +52,26 @@
   text-align: center;
 }
 
+/*portfolio*/
 .thumbnail {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
 }
-
-.thumbnail img {
-  width: 100%;
-  height: 15em;
+.square {
+    position:relative;
+    overflow:scroll;
+    padding-bottom:100%;
 }
-
+.inner-square {
+  position: absolute;
+  height: 100%;
+}
 .caption h3, .caption p {
   color: white;
 }
 
+
+
+/*blog*/
 .postDate {
   font-style: italic;
 }

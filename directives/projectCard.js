@@ -16,7 +16,6 @@ angular
         'use strict';
         $scope.project = JSON.parse($scope.info);
         var num = (++$scope.index)*250;
-        console.log(num);
         $timeout(function(){
           $scope.animate = true;
         }, num);

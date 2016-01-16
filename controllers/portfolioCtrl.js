@@ -17,11 +17,11 @@ angular
         description: 'A full MEAN stack app that lets you connect with friends. We also set up an admin page for managing users. Learned a whole lot about git while collaborating on this project!'
       },
       {
-        title: 'Pokemon Game',
-        image: 'assets/pokemonGame.png',
-        link: 'http://patrickshaughnessy.github.io/Pokemon-Game/',
-        github: 'https://github.com/patrickshaughnessy/Pokemon-Game',
-        description: 'Try to catch em all! A little game built with the pokeapi and firebase.'
+        title: 'Chive Smash',
+        image: 'assets/chive-smash.png',
+        link: 'https://chive-smash.herokuapp.com/',
+        github: 'https://github.com/patrickshaughnessy/Chive-Scraper-Angular',
+        description: 'Inspired by Facesmash. A little chive scraper built with cheerio, angular, and firebase'
       },
       {
         title: 'Weather App',
@@ -35,7 +35,7 @@ angular
         image: 'assets/towersOfHanoi.png',
         link: 'http://patrickshaughnessy.github.io/Towers-of-Hanoi/',
         github: 'https://github.com/patrickshaughnessy/Towers-of-Hanoi',
-        description: 'A full MEAN stack app that lets you connect with friends. We also set up an admin page for managing users. Learned a whole lot about git while collaborating on this project!'
+        description: 'The classic towers of hanoi game built with jQuery'
       }
     ]
   })
