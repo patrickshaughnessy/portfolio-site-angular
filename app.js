@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('app', ['ui.router', 'ngAnimate'])
+  .module('app', ['ui.router', 'ngAnimate', 'ngSanitize'])
   .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise("/");
 
@@ -20,6 +20,11 @@ angular
         url: "/about",
         templateUrl: "templates/about.html",
         controller: 'aboutCtrl'
+      })
+      .state('blog', {
+        url: "/blog",
+        templateUrl: "templates/blog.html",
+        controller: 'blogCtrl'
       });
     //
     // $locationProvider.html5Mode({

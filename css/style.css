@@ -1,5 +1,5 @@
 #outer {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1436891620584-47fd0e565afb?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=975');
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1436891620584-47fd0e565afb?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=975');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -48,4 +48,12 @@
 
 .caption h3, .caption p {
   color: white;
+}
+
+.postDate {
+  font-style: italic;
+}
+
+.blogNavArea {
+  position: fixed;
 }
