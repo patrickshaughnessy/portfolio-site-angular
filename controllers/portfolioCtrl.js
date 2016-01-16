@@ -3,7 +3,10 @@
 angular
   .module('app')
   .controller('portfolioCtrl', function($scope, $timeout){
-    console.log('portfolioCtrl');
+
+    // $timeout(function(){
+    //   $scope.loaded = true;
+    // }, 1000)
 
     $scope.projects = [
       {

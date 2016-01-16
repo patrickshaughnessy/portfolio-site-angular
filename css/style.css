@@ -22,7 +22,7 @@
 
 .homeWrapper a {
   color: white;
-  transition: 1s cubic-bezier(0.795, 0.120, 0.105, 1.400);
+  transition: all 1s cubic-bezier(0.795, 0.120, 0.105, 1.400);
 }
 .homeWrapper a:hover {
   text-decoration: none;
@@ -35,13 +35,10 @@
 .aboutWrapper a {
   color: white;
   text-decoration: underline;
-  transition: 1s cubic-bezier(0.795, 0.120, 0.105, 1.400);
 }
 .aboutWrapper a:hover {
-  /*text-decoration: none;*/
-  transform: translateY(-5px)
+  color: white;
 }
-
 
 .profilePic {
   text-align: center;
@@ -57,7 +54,6 @@
 
 .thumbnail {
   background-color: transparent;
-  clear: both;
 }
 
 .thumbnail img {

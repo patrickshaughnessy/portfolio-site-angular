@@ -2,6 +2,6 @@
 
 angular
   .module('app')
-  .controller('aboutCtrl', function($scope){
-    console.log('aboutCtrl');
+  .controller('aboutCtrl', function($scope, $timeout){
+
   })

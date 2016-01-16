@@ -9,11 +9,17 @@ angular
       restrict: "AE",
       templateUrl: "directives/projectCard.html",
       scope: {
-        info: "@"
+        info: "@",
+        index: "@"
       },
-      controller: function($scope) {
+      controller: function($scope, $timeout) {
         'use strict';
         $scope.project = JSON.parse($scope.info);
+        var num = (++$scope.index)*250;
+        console.log(num);
+        $timeout(function(){
+          $scope.animate = true;
+        }, num);
       }
     };
   };
