@@ -26,6 +26,9 @@ p.navbar-text {
   color: white;
   cursor: pointer;
 }
+.clickable {
+  cursor: pointer;
+}
 
 .homeWrapper {
   text-align: left;
