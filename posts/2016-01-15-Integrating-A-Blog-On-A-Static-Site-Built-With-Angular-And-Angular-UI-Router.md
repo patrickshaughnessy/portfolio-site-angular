@@ -1,6 +1,6 @@
 ---
 title: 'Integrating A Blog On A Static Site Built With Angular And Angular UI Router'
-id: 'Integrating_A_Blog_On_A_Static_Site_Built_With_Angular_And_Angular_UI_Router'
+image: 'working-on-computer.jpeg'
 date: '01-15-2016'
 tags: ['blog', 'Angular', 'Javascript']
 ---

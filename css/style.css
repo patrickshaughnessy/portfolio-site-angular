@@ -5,7 +5,7 @@
   background-position: center;
   height: 100vh;
   width: 100vw;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: white;
   overflow: scroll;
 }
@@ -14,10 +14,12 @@
   background-color: transparent;
   border: none;
 }
+.navbar-default .navbar-nav>li>a:hover {
+  color: white;
+}
 
 .homeWrapper {
   text-align: left;
-  /*position: relative*/
 }
 
 .homeWrapper a {
@@ -48,7 +50,7 @@
 }
 
 .linkWrapper {
-  /*margin-top: 25vmin;*/
+  font-size: 150%;
   text-align: center;
 }
 
@@ -59,10 +61,10 @@
 .square {
     position:relative;
     overflow:scroll;
-    padding-bottom:100%;
+    /*padding-bottom:100%;*/
 }
 .inner-square {
-  position: absolute;
+  /*position: absolute;*/
   height: 100%;
 }
 .caption h3, .caption p {
@@ -72,19 +74,34 @@
 
 
 /*blog*/
-.postDate {
-  font-style: italic;
-}
-
-.blogNavArea {
-  position: fixed;
-}
-
 .blogWrapper {
   background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85) );
   color: black;
 }
-
-.postTitle {
-  text-align: left;
+.postDate {
+  font-style: italic;
+}
+.blogPostHeader {
+  position: relative;
+  height: 50vh;
+  color: white;
+  margin-top: 1%
+}
+.postTitleArea {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: 1% 10%;
+}
+.postTitleArea h1 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.blogPostBody {
+  position: relative;
+}
+.blogNavArea {
+  position: fixed;
 }
