@@ -32,7 +32,6 @@
   <script src="directives/projectCard.js"></script>
   <script src="directives/blogPost.js"></script>
 
-
 </head>
 <body ng-controller="appCtrl">
   <div id="outer">
@@ -45,7 +44,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <p class="navbar-text" ui-sref="home">Patrick Shaughnessy</p>
+          <p class="navbar-text" data-toggle="modal" data-target=".bs-example-modal-lg">Resume</p>
+
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <iframe src="http://registry.jsonresume.org/patrickshaughnessy" width="100%" height="500">
+                  <p> No iframe support? That's ok, just use <a href="http://registry.jsonresume.org/patrickshaughnessy">this</a> link!</p>
+                </iframe>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
