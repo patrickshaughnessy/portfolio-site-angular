@@ -85,7 +85,7 @@
   position: relative;
   height: 50vh;
   color: white;
-  margin-top: 1%
+  margin-top: 1%;
 }
 .postTitleArea {
   display: table;
@@ -98,6 +98,7 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  text-decoration: underline;
 }
 .blogPostBody {
   position: relative;

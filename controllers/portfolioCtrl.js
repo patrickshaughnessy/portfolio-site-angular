@@ -24,6 +24,13 @@ angular
         description: 'A GraphQL, relay-compatible interface for the RESTful Pokéapi.'
       },
       {
+        title: 'Apocalyse.then()',
+        image: 'assets/apocalypse-then.png',
+        link: 'https://protected-spire-4855.herokuapp.com/',
+        github: 'https://github.com/babelthuap/apocalypse.then',
+        description: 'A zombie apocalypse survival game. How long can you survive??'
+      },
+      {
         title: 'Friend Finder',
         image: 'assets/friendFinder2.png',
         link: 'http://young-favorite-users.herokuapp.com/',
