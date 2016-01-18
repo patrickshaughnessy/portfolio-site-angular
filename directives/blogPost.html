@@ -1,0 +1,12 @@
+<div class="col-xs-12">
+  <div class="blogPostHeader" style="background: url('assets/blog-images/{{post.image}}') center center no-repeat; background-size: cover">
+    <div class="text-center postTitleArea">
+      <h1 class="postTitle" id={{post.id}}>{{post.title}}</h1>
+    </div>
+  </div>
+  <h6 class="postDate">{{post.date}}</h6>
+  <hr>
+  <div class="blogPostBody">
+    <div ng-bind-html="post.body"></div>
+  </div>
+</div>

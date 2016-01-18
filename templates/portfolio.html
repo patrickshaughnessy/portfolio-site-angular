@@ -1,1 +1,7 @@
-<h1>portfolio</h1>
+<div class="portfolioWrapper">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="project in projects track by $index">
+      <project-card info={{project}} index={{$index}}></project-card>
+    </div>
+  </div>
+</div>

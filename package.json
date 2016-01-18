@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-site-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickshaughnessy/portfolio-site-angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrickshaughnessy/portfolio-site-angular/issues"
+  },
+  "homepage": "https://github.com/patrickshaughnessy/portfolio-site-angular#readme",
+  "dependencies": {
+    "concat-files": "^0.1.0",
+    "highlight.js": "^9.1.0",
+    "markdown-parse": "^0.2.1",
+    "marked": "^0.3.5"
+  }
+}

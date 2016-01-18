@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('app', ['ui.router'])
+  .module('app', ['ui.router', 'ngAnimate', 'ngSanitize'])
   .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise("/");
 
@@ -15,15 +15,30 @@ angular
         url: "/portfolio",
         templateUrl: "templates/portfolio.html",
         controller: 'portfolioCtrl'
+      })
+      .state('about', {
+        url: "/about",
+        templateUrl: "templates/about.html",
+        controller: 'aboutCtrl'
+      })
+      .state('blog', {
+        url: "/blog",
+        templateUrl: "templates/blog.html",
+        controller: 'blogCtrl'
       });
-
-    // $locationProvide.hashPrefix('!');
+    //
     // $locationProvider.html5Mode({
     //   enabled: true,
     //   requireBase: false
     // });
 
   })
+  // .config(function (hljsServiceProvider) {
+  //   hljsServiceProvider.setOptions({
+  //     // replace tab with 4 spaces
+  //     tabReplace: '    '
+  //   });
+  // })
   .controller('appCtrl', function($scope, $location){
 
     $scope.isActive = function(url){

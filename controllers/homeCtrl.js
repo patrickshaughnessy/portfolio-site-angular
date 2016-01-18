@@ -2,6 +2,5 @@
 
 angular
   .module('app')
-  .controller('homeCtrl', function($scope){
-    console.log('homeCtrl');
+  .controller('homeCtrl', function($rootScope, $scope, $timeout){
   })
