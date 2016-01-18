@@ -18,11 +18,12 @@
 .navbar-default .navbar-nav>li>a:hover {
   color: white;
 }
+p.navbar-text {
+  padding-left: 2%;
+  font-size: 1.25em;
+}
 .navbar-default .navbar-text:hover {
   color: white;
-  cursor: pointer;
-}
-.clickable {
   cursor: pointer;
 }
 
