@@ -4,7 +4,7 @@ image: 'water-flow.jpg'
 date: '01-24-2016'
 tags: ['Flux', 'React', 'Javascript']
 ---
-Last week at [Coding House](https://codinghouse.co/#!home "Coding House"), a some of us chose to create a web app using React. Our group made a forum for prospective or current students and alumni of dev bootcamps to ask questions and share their experiences. Check it out [here](https://reddit-for-devcamps.herokuapp.com/ "Link To DevCampFire").
+Last week at [Coding House](https://codinghouse.co/#!home "Coding House"), some of us chose to create a web app using React. Our group made a forum for prospective or current students and alumni of dev bootcamps to ask questions and share their experiences. Check it out [here](https://reddit-for-devcamps.herokuapp.com/ "Link To DevCampFire").
 
 Listening to some of the frustrations from the other teams as well as working through our own issues during the project, I thought that doing a little Flux flow tutorial would be beneficial. I'll use Robbie McLellan's SwordOfTheNinja template to start out, which you can find [here](https://github.com/rlm14/SwordOfTheNinja "Sword Of The Ninja Link"). I like to use it whenever I start React projects because it has all the essentials for creating a full stack React app like babel and jspm without any unnecessary sugar. Make sure to give him a star if you use it in your projects!
 
