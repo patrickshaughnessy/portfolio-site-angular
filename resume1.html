@@ -1,0 +1,577 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Patrick Shaughnessy</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Patrick Shaughnessy
+					</h1>
+					<h2>
+						Full Stack Javascript Developer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="6717140f0612000f095f5127000a060e0b4904080a">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">(858) 705-9514</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href="http://www.patricktshaughnessy.com">http://www.patricktshaughnessy.com</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Full Stack (MEAN) Javascript Developer currently enrolled at Coding House in San Francisco, graduating in February 2016. Previously a teacher at AEON Corporation in Nagoya, Japan (3 years) and Project Manager at Blaine Tech Services (5 years). I&#x27;m interested in changing the world for the better.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Twitter
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://twitter.com/pattshaughnessy">pattshaughnessy</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://www.linkedin.com/in/patrick-shaughnessy-0772b114">patrick-shaughnessy</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Github
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://github.com/patrickshaughnessy">patrickshaughnessy</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						StackOverflow
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://stackoverflow.com/users/5294685/patrick-shaughnessy">patrick-shaughnessy</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						AngelList
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://angel.co/patrick-shaughnessy-1">patrick-shaughnessy-1</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>AEON Corporation, Japan</span>
+					<span class="date">
+						2012-06-23 — 2015-06-20
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.aeonet.com/">http://www.aeonet.com/</a>
+				</div>
+				<div class="position">
+					English Teacher
+				</div>
+				<div class="summary">
+					<p>Taught English to adult Japanese students. Helped my students set and reach their goals of studying abroad, changing their jobs, getting promoted, making new friends, and traveling. Taught me to take risks and get out of my comfort zone. I also learned a fair amount of Japanese!</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Changed people&#x27;s lives</li>
+					<li class="bullet">Learned how to communicate with someone who doesn&#x27;t speak my language or share the same cultural background as me</li>
+					<li class="bullet">Climbed Mt. Fuji</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Blaine Tech Services, Inc</span>
+					<span class="date">
+						2010-01-01 — 2012-06-18
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.blainetech.com/">http://www.blainetech.com/</a>
+				</div>
+				<div class="position">
+					Project Manager
+				</div>
+				<div class="summary">
+					<p>Coordinated groundwater monitoring efforts at ~250 sites/quarter throughout California and Washington. Supervised the day-to-day operations of multiple remote technicians. Ensured cost-effective and error-free implementation of complex project directives from clients.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Managed the company&#x27;s largest client portfolio despite being one of the youngest project managers</li>
+					<li class="bullet">Learned organization, time management and attention to detail in the context of managerial responsibilities</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Blaine Tech Services, Inc</span>
+					<span class="date">
+						2007-10-01 — 2010-01-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.blainetech.com/">http://www.blainetech.com/</a>
+				</div>
+				<div class="position">
+					Environmental Sampling Technician
+				</div>
+				<div class="summary">
+					<p>Conducted groundwater monitoring at sites in California and Washington. Implemented complex project scopes with little to no supervision</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Regularly tapped by management to lead new and/or challenging projects</li>
+					<li class="bullet">Learned the importance of communication, self-sufficiency and professionalism in the workplace</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="volunteer" class="row">
+		<aside class="col-sm-3">
+			<h3>Volunteer</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>San Diego Pride</span>
+					<span class="date">
+						2015-07-17 — 2015-07-19
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://sdpride.org/">https://sdpride.org/</a>
+				</div>
+				<div class="position">
+					Volunteer
+				</div>
+				<div class="summary">
+					<p>Volunteered at San Diego LGBT Pride 2015.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Assisted the Community Partners Manager with various tasks as needed throughout the weekend to ensure smooth operations.</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Coding House</span>
+					<span class="date">
+						2015-10-26 — 2016-02-26
+					</span>
+				</h4>
+				<div class="area">
+					Full Stack Javascript Development
+				</div>
+				<div class="studyType">
+					Javascript
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>University of California, Los Angeles</span>
+					<span class="date">
+						2004-09-01 — 2007-09-01
+					</span>
+				</h4>
+				<div class="area">
+					Psychobiology
+				</div>
+				<div class="studyType">
+					B.S.
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>MEAN Stack Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>Mongo</li>
+					<li>Express</li>
+					<li>Angular</li>
+					<li>Node</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Web Apps</h4>
+				</div>
+				<ul class="keywords">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+					<li>MEAN Stack</li>
+					<li>ReactJS</li>
+					<li>jQuery</li>
+					<li>Bootstrap</li>
+					<li>Foundation</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>User Management</h4>
+				</div>
+				<ul class="keywords">
+					<li>Social Login</li>
+					<li>Authentication</li>
+					<li>Authorization</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Database Management</h4>
+				</div>
+				<ul class="keywords">
+					<li>Mongo</li>
+					<li>SQL</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Mobile</h4>
+				</div>
+				<ul class="keywords">
+					<li>Ionic</li>
+					<li>React Native</li>
+					<li>Cordova</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Japanese</strong>
+				</div>
+				<div class="fluency">
+					Limited working proficiency
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Health &amp; Fitness</h4>
+				</div>
+				<ul class="keywords">
+					<li>Lifting</li>
+					<li>Running</li>
+					<li>Protein</li>
+					<li>Snowboarding</li>
+					<li>Surfing</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Music</h4>
+				</div>
+				<ul class="keywords">
+					<li>DJ</li>
+					<li>Music Production</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+
+	</div>
+	
+	</body>
+</html>
