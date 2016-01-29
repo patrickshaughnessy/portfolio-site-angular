@@ -8,6 +8,7 @@
   font-family: 'Raleway', sans-serif;
   color: white;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .navbar-default {
@@ -16,6 +17,17 @@
 }
 .navbar-default .navbar-nav>li>a:hover {
   color: white;
+}
+p.navbar-text {
+  padding-left: 2%;
+  font-size: 1.25em;
+}
+.navbar-default .navbar-text:hover {
+  color: white;
+  cursor: pointer;
+}
+.clickable {
+  cursor: pointer;
 }
 
 .homeWrapper {
@@ -85,7 +97,7 @@
   position: relative;
   height: 50vh;
   color: white;
-  margin-top: 1%
+  margin-top: 1%;
 }
 .postTitleArea {
   display: table;
@@ -98,6 +110,7 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  text-decoration: underline;
 }
 .blogPostBody {
   position: relative;
