@@ -1,5 +1,5 @@
 #outer {
-  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1436891620584-47fd0e565afb?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=975');
+  /*background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('https://images.unsplash.com/photo-1436891620584-47fd0e565afb?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=975');*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -7,17 +7,77 @@
   width: 100vw;
   font-family: 'Raleway', sans-serif;
   color: white;
-  overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
-.navbar-default {
-  background-color: transparent;
-  border: none;
+.background {
+  position: absolute;
+  background-color: #e1e8f0;
+  height: 100%;
+  width: 100%;
 }
-.navbar-default .navbar-nav>li>a:hover {
+
+.background-container {
+  position: relative;
+  width: 100%;
+}
+
+.background div div:after{
+  content: "";
+  display: block;
+  padding-bottom: 100%
+}
+
+.background div div {
+  transform: rotate(45deg);
+  height: 33%;
+  width: 33%;
+  margin: 5%;
+  display: inline-block;
+}
+.background .red {
+  background-color: #e62739;
+}
+.red h1, .red p {
+  transform: rotate(-45deg);
+}
+.background .green {
+  background-color: #6ed3cf;
+}
+.background .purple {
+  background-color: #9068be;
+}
+.background .grey {
+  background-color: #e1e8f0;
+}
+
+/*.topArea {
+  background-color: #9ad3de;
+}*/
+
+.navbar-default {
+  background-color: #e3e3e3;
+  border: 1px solid #e3e3e3;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: default;
+}
+
+.navbar-default .navbar-nav>li>a {
   color: white;
 }
+.navbar-default .navbar-nav>li>a:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 p.navbar-text {
   padding-left: 2%;
   font-size: 1.25em;
