@@ -7,8 +7,12 @@
   width: 100vw;
   font-family: 'Raleway', sans-serif;
   color: white;
-  overflow: scroll;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+}
+
+.sectionTitle {
+  text-decoration: underline;
 }
 
 .img-responsive {

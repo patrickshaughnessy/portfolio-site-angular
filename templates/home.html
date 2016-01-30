@@ -4,8 +4,8 @@
       <img class=" image-responsive img-rounded" src="assets/profile-bw.jpg" alt="profile image">
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 aboutText">
-      <h3>Hey there! I'm Patrick</h3>
-      <p>I make things with Javascript.</p>
+      <h1>Hey there! I'm Patrick.</h1>
+      <h3>I make things with Javascript.</h3>
       <p>Some things I'm into:</p>
       <ul>
         <li>ReactJS</li>
@@ -17,9 +17,10 @@
     </div>
   </div>
 </div>
+<hr>
 <div class="portfolioWrapper" ng-controller="portfolioCtrl">
   <div class="row">
-    <h1 class="text-center">Projects:</h1>
+    <h1 class="text-center sectionTitle">Projects</h1>
     <div ng-repeat="project in projects track by $index">
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" >
         <project-card info={{project}} index={{$index}}></project-card>
@@ -27,6 +28,20 @@
       <div ng-if="$index === 0" class="clearfix visible-xs-block"></div>
       <div ng-if="$index === 1" class="clearfix visible-sm-block"></div>
       <div ng-if="$index === 2" class="clearfix visible-md-block"></div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="blogArea" ng-controller="blogCtrl">
+  <div class="row">
+    <h1 class="text-center sectionTitle">Blog</h1>
+    <div class="col-xs-12">
+      <div ng-repeat="post in posts">
+        <h2>{{post.title}}</h2>
+        <div class="blogPostBody">
+          <div ng-bind-html="getSnippet(post)"></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
