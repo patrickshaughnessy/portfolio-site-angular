@@ -119,6 +119,7 @@ p.navbar-text {
 .blogWrapper {
   background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85) );
   color: black;
+  margin-bottom: 5%;
 }
 .postDate {
   font-style: italic;
@@ -147,4 +148,8 @@ p.navbar-text {
 }
 .blogNavArea {
   position: fixed;
+}
+.blogNavLinks a {
+  color: white;
+
 }
