@@ -11,12 +11,30 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.img-responsive {
+  width: 100%;
+  min-width: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
 .navbar-default {
-  background-color: transparent;
+  background-color: black;
   border: none;
 }
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a {
   color: white;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: black;
+  background-color: white;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  color: black;
+  background-color: white;
+
 }
 p.navbar-text {
   padding-left: 2%;
@@ -45,6 +63,8 @@ p.navbar-text {
 
 .aboutWrapper {
   text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .aboutWrapper a {
   color: white;

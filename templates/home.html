@@ -1,17 +1,32 @@
-<div class="homeWrapper">
-  <div class="row linkWrapper">
-    <div class="col-xs-12">
-      <div class="row">
-        <div class="col-xs-12">
-          <a ui-sref="portfolio">Portfolio</a>
-        </div>
-        <div class="col-xs-6">
-          <a ui-sref="about">About Me</a>
-        </div>
-        <div class="col-xs-6">
-          <a ui-sref="blog">Blog</a>
-        </div>
+<div class="aboutWrapper">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 profilePic">
+      <img class=" image-responsive img-rounded" src="assets/profile-bw.jpg" alt="profile image">
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 aboutText">
+      <h3>Hey there! I'm Patrick</h3>
+      <p>I make things with Javascript.</p>
+      <p>Some things I'm into:</p>
+      <ul>
+        <li>ReactJS</li>
+        <li>Mongoose, Express, AngularJS, Node</li>
+        <li>Techno music</li>
+        <li>Japanese</li>
+      </ul>
+      <p>Check out some of my projects below and connect with me on social media!</p>
+    </div>
+  </div>
+</div>
+<div class="portfolioWrapper" ng-controller="portfolioCtrl">
+  <div class="row">
+    <h1 class="text-center">Projects:</h1>
+    <div ng-repeat="project in projects track by $index">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" >
+        <project-card info={{project}} index={{$index}}></project-card>
       </div>
+      <div ng-if="$index === 0" class="clearfix visible-xs-block"></div>
+      <div ng-if="$index === 1" class="clearfix visible-sm-block"></div>
+      <div ng-if="$index === 2" class="clearfix visible-md-block"></div>
     </div>
   </div>
 </div>
