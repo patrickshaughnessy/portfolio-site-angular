@@ -7,16 +7,44 @@
   width: 100vw;
   font-family: 'Raleway', sans-serif;
   color: white;
-  overflow: scroll;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
+.sectionTitle {
+  text-decoration: underline;
+}
+
+.img-responsive {
+  width: 100%;
+  min-width: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-toggle {
+  background-color: white;
+}
+
 .navbar-default {
-  background-color: transparent;
+  background-color: black;
   border: none;
 }
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a {
   color: white;
+
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  color: black;
+  background-color: white;
+  cursor: default;
 }
 p.navbar-text {
   padding-left: 2%;
@@ -45,6 +73,8 @@ p.navbar-text {
 
 .aboutWrapper {
   text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .aboutWrapper a {
   color: white;
@@ -89,6 +119,7 @@ p.navbar-text {
 .blogWrapper {
   background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85) );
   color: black;
+  margin-bottom: 5%;
 }
 .postDate {
   font-style: italic;
@@ -117,4 +148,8 @@ p.navbar-text {
 }
 .blogNavArea {
   position: fixed;
+}
+.blogNavLinks a {
+  color: white;
+
 }
