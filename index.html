@@ -8,104 +8,72 @@
   <!-- <base href="/"> -->
   <title>Patrick Shaughnessy</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="css/default.css">
-  <link rel="stylesheet" href="css/social.css">
-  <link rel="stylesheet" href="css/animation.css">
+  <!-- Styles -->
+  <link href='https://fonts.googleapis.com/css?family=Nunito|Arvo|Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-animate.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-sanitize.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
 
-  <script src="app.js"></script>
-  <script src="controllers/homeCtrl.js"></script>
-  <script src="controllers/portfolioCtrl.js"></script>
-  <script src="controllers/aboutCtrl.js"></script>
-  <script src="controllers/blogCtrlCompiled.js"></script>
-  <script src="directives/projectCard.js"></script>
-  <script src="directives/blogPost.js"></script>
+  <!-- Angular UI Router -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+
+
+
+  <script src="index.js"></script>
 
 </head>
-<body ng-controller="appCtrl">
-  <div id="outer">
+<body ng-app="app">
 
-    <div class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+  <div layout="column" layout-fill>
+    <md-toolbar class="transparent-background">
+      <div layout="row">
+        <div flex="50">
+          <div class="md-toolbar-tools">
+            <md-button class="bordered-button">
+              <i class="fa fa-info fa-1" aria-hidden="true"></i>
+            </md-button>
+          </div>
         </div>
-
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li ng-class="{active: isActive('/')}" data-toggle="collapse" data-target=".navbar-collapse.in">
-              <a ui-sref="home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li ng-class="{active: isActive('/blog')}" data-toggle="collapse" data-target=".navbar-collapse.in">
-              <a ui-sref="blog">Blog</a>
-            </li>
-            <li data-toggle="collapse" data-target=".navbar-collapse.in">
-              <a data-toggle="modal" data-target=".bs-example-modal-lg">Resume</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12">
-          <div class="social row">
-            <div class="col-xs-2 col-xs-offset-1">
-              <div><a target="_blank" href="https://www.facebook.com/patrick.shaughnessy.5815"><i class="fa fa-lg fa-facebook"></i></a></div>
-            </div>
-            <div class="col-xs-2">
-              <div><a target="_blank" href="https://twitter.com/pattshaughnessy"><i class="fa fa-lg fa-twitter"></i></a></div>
-            </div>
-            <div class="col-xs-2">
-              <div><a target="_blank" href="https://github.com/patrickshaughnessy"><i class="fa fa-lg fa-github"></i></a></div>
-            </div>
-            <div class="col-xs-2">
-              <div><a target="_blank" href="https://www.linkedin.com/pub/patrick-shaughnessy/14/2b1/77"><i class="fa fa-lg fa-linkedin"></i></a></div>
-            </div>
-            <div class="col-xs-2">
-              <div><a target="_blank" href="http://stackoverflow.com/users/5294685/patrick-shaughnessy"><i class="fa fa-lg fa-stack-overflow"></i></a></div>
-            </div>
+        <div flex="50">
+          <div class="md-toolbar-tools">
+            <span flex></span>
+            <md-button class="bordered-button">
+              <i class="fa fa-envelope fa-1" aria-hidden="true"></i>
+            </md-button>
           </div>
         </div>
       </div>
-      <div class="ui-view-container">
-        <div ui-view></div>
+    </md-toolbar>
+    <md-content layout="row" layout-xs="column" flex>
+      <div flex>
+
+        <div layout-padding layout-margin>
+          <h3>Some Title</h3>
+        </div>
+        <div layout-margin>
+          <p>
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+
       </div>
-    </div>
+      <div flex>
+        2
+      </div>
+    </md-content>
   </div>
 
-  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        </div>
-        <div class="modal-body">
-          <iframe src="Resume1-29-2016.pdf" width="100%" height="500"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>
 </html>

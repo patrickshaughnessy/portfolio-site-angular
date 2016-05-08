@@ -1,155 +1,26 @@
-#outer {
-  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1436891620584-47fd0e565afb?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=975');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  width: 100vw;
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+body {
+  /*font-family: 'Nunito', sans-serif;*/
+  /*font-family: 'Arvo', serif;*/
+  font-family: 'Roboto'
 }
 
-.sectionTitle {
-  text-decoration: underline;
+div {
+  /*border: 1px solid red*/
 }
 
-.img-responsive {
-  width: 100%;
-  min-width: 0;
+.transparent-background {
+  background: transparent !important;
 }
 
-.navbar {
-  margin-bottom: 0;
+.md-button {
+  border-radius: 0px;
+  min-width: 22px;
+  padding: 0px;
+  margin: 0px;
+  line-height: 18px;
+  min-height: 18px;
 }
 
-.navbar-toggle {
-  background-color: white;
-}
-
-.navbar-default {
-  background-color: black;
-  border: none;
-}
-.navbar-default .navbar-nav>li>a {
-  color: white;
-
-}
-.navbar-default .navbar-nav>li>a:hover {
-  color: black;
-  background-color: white;
-  cursor: pointer;
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-  color: black;
-  background-color: white;
-  cursor: default;
-}
-p.navbar-text {
-  padding-left: 2%;
-  font-size: 1.25em;
-}
-.navbar-default .navbar-text:hover {
-  color: white;
-  cursor: pointer;
-}
-.clickable {
-  cursor: pointer;
-}
-
-.homeWrapper {
-  text-align: left;
-}
-
-.homeWrapper a {
-  color: white;
-  transition: all 1s cubic-bezier(0.795, 0.120, 0.105, 1.400);
-}
-.homeWrapper a:hover {
-  text-decoration: none;
-  transform: scale3d(0, 0, 0.1) rotate(360deg);
-}
-
-.aboutWrapper {
-  text-align: left;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-.aboutWrapper a {
-  color: white;
-  text-decoration: underline;
-}
-.aboutWrapper a:hover {
-  color: white;
-}
-
-.profilePic {
-  text-align: center;
-}
-.profilePic img {
-  width: 50%;
-}
-
-.linkWrapper {
-  font-size: 150%;
-  text-align: center;
-}
-
-/*portfolio*/
-.thumbnail {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.square {
-    position:relative;
-    overflow:scroll;
-    /*padding-bottom:100%;*/
-}
-.inner-square {
-  /*position: absolute;*/
-  height: 100%;
-}
-.caption h3, .caption p {
-  color: white;
-}
-
-
-
-/*blog*/
-.blogWrapper {
-  background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85) );
-  color: black;
-  margin-bottom: 5%;
-}
-.postDate {
-  font-style: italic;
-}
-.blogPostHeader {
-  position: relative;
-  height: 50vh;
-  color: white;
-  margin-top: 1%;
-}
-.postTitleArea {
-  display: table;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  padding: 1% 10%;
-}
-.postTitleArea h1 {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: underline;
-}
-.blogPostBody {
-  position: relative;
-}
-.blogNavArea {
-  position: fixed;
-}
-.blogNavLinks a {
-  color: white;
-
+.bordered-button {
+  border: 3px solid black;
 }

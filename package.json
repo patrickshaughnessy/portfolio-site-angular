@@ -1,25 +1,21 @@
 {
-  "name": "portfolio-site-angular",
+  "name": "my-site",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "My personal website and portfolio",
+  "main": "index.js",
   "scripts": {
-    "start": "node build.js && serve"
+    "start": "serve"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/patrickshaughnessy/portfolio-site-angular.git"
   },
-  "author": "",
+  "author": "Patrick Shaughnessy",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/patrickshaughnessy/portfolio-site-angular/issues"
   },
   "homepage": "https://github.com/patrickshaughnessy/portfolio-site-angular#readme",
   "dependencies": {
-    "concat-files": "^0.1.0",
-    "highlight.js": "^9.1.0",
-    "markdown-parse": "^0.2.1",
-    "marked": "^0.3.5"
   }
 }
